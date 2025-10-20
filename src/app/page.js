@@ -20,8 +20,8 @@ export default function LandingPage() {
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-dodger-blue/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      </div>
-
+              </div>
+              
       {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled 
@@ -51,6 +51,15 @@ export default function LandingPage() {
                 Experience
               </a>
               <Link 
+                href="/dashboard"
+                className="text-gray-300 hover:text-white transition-colors font-medium flex items-center gap-2"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                Staff Login
+              </Link>
+              <Link 
                 href="/checkin"
                 className="bg-dodger-blue hover:bg-blue-500 text-white px-6 py-2.5 rounded-lg font-semibold transition-all shadow-lg shadow-dodger-blue/50 hover:shadow-xl hover:shadow-dodger-blue/60"
               >
@@ -74,12 +83,12 @@ export default function LandingPage() {
               </div>
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                 Elevate Your
-                <span className="block bg-gradient-to-r from-dodger-blue to-blue-400 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">
                   Journey
                 </span>
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Experience luxury and convenience with AutoUnion's premium fleet. Seamless digital check-in powered by cutting-edge AI technology.
+                Experience luxury and convenience with AutoUnion&apos;s premium fleet. Seamless digital check-in powered by cutting-edge AI technology.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
@@ -94,7 +103,7 @@ export default function LandingPage() {
                 </button>
               </div>
             </div>
-
+            
             {/* Right Content - Glass Card */}
             <div className="relative">
               <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl">
@@ -135,10 +144,10 @@ export default function LandingPage() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
       </section>
 
       {/* Features Section */}
@@ -151,7 +160,7 @@ export default function LandingPage() {
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               Experience the perfect blend of luxury, technology, and convenience
             </p>
-          </div>
+                  </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Feature 1 */}
@@ -193,7 +202,7 @@ export default function LandingPage() {
                 <div className="w-14 h-14 bg-dodger-blue/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <svg className="w-7 h-7 text-dodger-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
+                    </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-3">Instant Access</h3>
                 <p className="text-gray-400 leading-relaxed">
@@ -215,7 +224,7 @@ export default function LandingPage() {
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
               From executive sedans to luxury SUVs, find your perfect match
             </p>
-          </div>
+        </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Economy */}
@@ -228,7 +237,7 @@ export default function LandingPage() {
                 <div className="flex items-baseline mb-6">
                   <span className="text-4xl font-bold text-white">$29</span>
                   <span className="text-gray-400 ml-2">/day</span>
-                </div>
+              </div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center text-gray-300">
                     <svg className="w-5 h-5 text-dodger-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -245,7 +254,7 @@ export default function LandingPage() {
                   <li className="flex items-center text-gray-300">
                     <svg className="w-5 h-5 text-dodger-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                </svg>
                     Automatic/Manual
                   </li>
                 </ul>
@@ -255,8 +264,8 @@ export default function LandingPage() {
                 >
                   Select Vehicle
                 </Link>
-              </div>
             </div>
+          </div>
 
             {/* Premium */}
             <div className="group relative bg-white/10 backdrop-blur-xl border-2 border-dodger-blue rounded-2xl overflow-hidden transform scale-105">
@@ -287,8 +296,8 @@ export default function LandingPage() {
                   </li>
                   <li className="flex items-center text-gray-300">
                     <svg className="w-5 h-5 text-dodger-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
                     Advanced Safety
                   </li>
                 </ul>
@@ -298,8 +307,8 @@ export default function LandingPage() {
                 >
                   Select Vehicle
                 </Link>
-              </div>
             </div>
+          </div>
 
             {/* Luxury */}
             <div className="group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden hover:border-dodger-blue/50 transition-all duration-300">
@@ -311,7 +320,7 @@ export default function LandingPage() {
                 <div className="flex items-baseline mb-6">
                   <span className="text-4xl font-bold text-white">$149</span>
                   <span className="text-gray-400 ml-2">/day</span>
-                </div>
+              </div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center text-gray-300">
                     <svg className="w-5 h-5 text-dodger-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -328,7 +337,7 @@ export default function LandingPage() {
                   <li className="flex items-center text-gray-300">
                     <svg className="w-5 h-5 text-dodger-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                </svg>
                     Chauffeur Available
                   </li>
                 </ul>
@@ -341,7 +350,7 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-        </div>
+              </div>
       </section>
 
       {/* CTA Section */}
@@ -358,7 +367,7 @@ export default function LandingPage() {
               </p>
               <Link 
                 href="/checkin"
-                className="inline-block px-10 py-4 bg-white text-dodger-blue hover:bg-gray-100 rounded-xl font-bold text-lg transition-all shadow-2xl hover:shadow-white/50 hover:-translate-y-1"
+                className="inline-block px-10 py-4 bg-white text-black hover:bg-gray-100 rounded-xl font-bold text-lg transition-all shadow-2xl hover:shadow-white/50 hover:-translate-y-1"
               >
                 Begin Your Journey →
               </Link>
